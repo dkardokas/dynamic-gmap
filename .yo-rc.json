@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.0",
+    "libraryName": "dynamic-gmap",
+    "libraryId": "d34bd602-7578-4468-88df-73f7c2067fa8",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "Dynamic Gmap",
+    "solutionShortDescription": "SPFx Web part for visualizing data points on a map",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
