@@ -122,17 +122,17 @@ export default class ProjectMapWebPart extends BaseClientSideWebPart<IProjectMap
       pages: [
         {
           header: {
-            description: "Settings for Project Map web part."
+            description: "Settings for Dynamic Map web part."
           },
           groups: [
-            {
-              groupName: "Map Properties",
+            {             
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: "Title"
                 }),
                 PropertyPaneTextField('mapApiKey', {
-                  label: "API Key"
+                  label: "API Key",
+                  description: "Google Cloud project api key. Visit https://console.cloud.google.com/ to obtain a free key."
                 }),
                 PropertyPaneTextField('mapDataListName', {
                   label: "List Name",
@@ -140,8 +140,7 @@ export default class ProjectMapWebPart extends BaseClientSideWebPart<IProjectMap
                 }),
                 PropertyPaneTextField('startLat', {
                   label: "Starting Latitude",
-                  description: "Center of the map on load. Must be a valid Latitude value",
-                  placeholder: "55.5555",
+                  description: "Center of the map on load. Must be a valid Latitude value",                  
                   onGetErrorMessage(value) {
                     const floatVal: number = parseFloat(value);
                     if (isNaN(floatVal) || floatVal > 90 || floatVal < -90)
@@ -151,8 +150,7 @@ export default class ProjectMapWebPart extends BaseClientSideWebPart<IProjectMap
                 }),
                 PropertyPaneTextField('startLon', {
                   label: "Starting Longitude",
-                  description: "Center of the map on load. Must be a valid Longitude value",
-                  placeholder: "-1.1111",
+                  description: "Center of the map on load. Must be a valid Longitude value",                  
                   onGetErrorMessage(value) {
                     const floatVal: number = parseFloat(value);
                     if (isNaN(floatVal) || floatVal > 180 || floatVal < -180)

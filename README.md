@@ -1,4 +1,4 @@
-# PaTT webparts
+# Dynamic GMap 
 
 ## Summary
 
@@ -14,11 +14,6 @@ SharePoint web part for visualizing location points on the map. Uses Google Maps
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
 
-## Solution
-
-| Solution    | Author(s)                                               |
-| ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
 
 ## Version history
 
@@ -34,7 +29,7 @@ SharePoint web part for visualizing location points on the map. Uses Google Maps
 
 ## Minimal Path to Awesome
 
-- Obtain GMap API key from Google Cloud project
+- Obtain GMap API key from a Google Cloud project
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
@@ -44,6 +39,10 @@ SharePoint web part for visualizing location points on the map. Uses Google Maps
 
 ## Features
 
+SharePoint 'Location' field type is required. This is automatically converted to coordinates.
+Supports clustering, when several points are close to each other (depending on zoom level), a clickable cluster is displayed.
+
+![Demo screen grab](media/Dynamic_GMap.gif)
 
 ## References
 
